@@ -1,0 +1,39 @@
+// @mixin clearfix {
+//     &::after {
+//         content: "";
+//         display: table;
+//         clear: both;
+//     }
+// }
+
+// @mixin absCenter {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }
+
+// Media query manager
+/*
+@mixin respond-phone {
+    @media (max-width: 600px) {
+    }
+}
+
+0 - 600 ------- phone
+600 - 900 ----- tablet portrait
+900 - 1200 ---- tablet landscape
+1200 - 1800 --- normal styles apply
+1800+ --------- big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+order = base + typography > general layout + grid > page layout > components
+
+1em = 16px 
+Whatever is user font size this way we can control their entire browser layout. no need to worry about breakout of layout.
+*/
