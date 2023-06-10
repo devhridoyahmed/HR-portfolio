@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 731.2 577.01">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#New_Gradient_Swatch_3-24);
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13, .cls-14, .cls-15, .cls-16, .cls-17, .cls-18, .cls-19, .cls-20, .cls-21, .cls-22, .cls-23, .cls-24, .cls-25 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: url(#New_Gradient_Swatch_3-12);
+      }
+
+      .cls-3 {
+        fill: url(#New_Gradient_Swatch_3);
+      }
+
+      .cls-4 {
+        fill: url(#New_Gradient_Swatch_3-14);
+      }
+
+      .cls-5 {
+        fill: url(#New_Gradient_Swatch_3-6);
+      }
+
+      .cls-6 {
+        fill: url(#New_Gradient_Swatch_3-19);
+      }
+
+      .cls-7 {
+        fill: url(#New_Gradient_Swatch_3-8);
+      }
+
+      .cls-8 {
+        fill: url(#New_Gradient_Swatch_3-10);
+      }
+
+      .cls-9 {
+        fill: url(#New_Gradient_Swatch_3-23);
+      }
+
+      .cls-10 {
+        fill: url(#New_Gradient_Swatch_3-16);
+      }
+
+      .cls-11 {
+        fill: url(#New_Gradient_Swatch_3-20);
+      }
+
+      .cls-12 {
+        fill: url(#New_Gradient_Swatch_3-5);
+      }
+
+      .cls-13 {
+        fill: url(#New_Gradient_Swatch_3-7);
+      }
+
+      .cls-14 {
+        fill: url(#New_Gradient_Swatch_3-13);
+      }
+
+      .cls-15 {
+        fill: url(#New_Gradient_Swatch_3-11);
+      }
+
+      .cls-16 {
+        fill: url(#New_Gradient_Swatch_3-25);
+      }
+
+      .cls-17 {
+        fill: url(#New_Gradient_Swatch_3-9);
+      }
+
+      .cls-18 {
+        fill: url(#New_Gradient_Swatch_3-17);
+      }
+
+      .cls-19 {
+        fill: url(#New_Gradient_Swatch_3-15);
+      }
+
+      .cls-20 {
+        fill: url(#New_Gradient_Swatch_3-2);
+      }
+
+      .cls-21 {
+        fill: url(#New_Gradient_Swatch_3-18);
+      }
+
+      .cls-22 {
+        fill: url(#New_Gradient_Swatch_3-4);
+      }
+
+      .cls-23 {
+        fill: url(#New_Gradient_Swatch_3-3);
+      }
+
+      .cls-24 {
+        fill: url(#New_Gradient_Swatch_3-21);
+      }
+
+      .cls-25 {
+        fill: url(#New_Gradient_Swatch_3-22);
+      }
+    </style>
+    <linearGradient id="New_Gradient_Swatch_3" data-name="New Gradient Swatch 3" x1="526.03" y1="-7.62" x2="207.5" y2="581.34" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3367b0"/>
+      <stop offset=".5" stop-color="#4387c7"/>
+      <stop offset="1" stop-color="#3367b0"/>
+    </linearGradient>
+    <linearGradient id="New_Gradient_Swatch_3-2" data-name="New Gradient Swatch 3" x1="320.09" y1="-119" x2="1.56" y2="469.97" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-3" data-name="New Gradient Swatch 3" x1="320.09" y1="-119" x2="1.56" y2="469.97" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-4" data-name="New Gradient Swatch 3" x1="323.45" y1="-117.18" x2="4.93" y2="471.79" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-5" data-name="New Gradient Swatch 3" x1="323.45" y1="-117.18" x2="4.93" y2="471.79" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-6" data-name="New Gradient Swatch 3" x1="326.81" y1="-115.36" x2="8.29" y2="473.61" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-7" data-name="New Gradient Swatch 3" x1="326.81" y1="-115.36" x2="8.29" y2="473.61" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-8" data-name="New Gradient Swatch 3" x1="329.76" y1="-113.77" x2="11.24" y2="475.2" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-9" data-name="New Gradient Swatch 3" x1="428.94" y1="-60.13" x2="110.42" y2="528.84" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-10" data-name="New Gradient Swatch 3" x1="527.71" y1="-6.71" x2="209.19" y2="582.25" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-11" data-name="New Gradient Swatch 3" x1="531.07" y1="-4.89" x2="212.55" y2="584.07" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-12" data-name="New Gradient Swatch 3" x1="531.07" y1="-4.89" x2="212.55" y2="584.07" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-13" data-name="New Gradient Swatch 3" x1="534.02" y1="-3.3" x2="215.49" y2="585.66" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-14" data-name="New Gradient Swatch 3" x1="524.34" y1="-8.53" x2="205.82" y2="580.43" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-15" data-name="New Gradient Swatch 3" x1="520.98" y1="-10.35" x2="202.46" y2="578.62" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-16" data-name="New Gradient Swatch 3" x1="520.98" y1="-10.35" x2="202.46" y2="578.62" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-17" data-name="New Gradient Swatch 3" x1="517.62" y1="-12.17" x2="199.1" y2="576.8" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-18" data-name="New Gradient Swatch 3" x1="623.11" y1="44.88" x2="304.59" y2="633.85" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-19" data-name="New Gradient Swatch 3" x1="721.88" y1="98.3" x2="403.36" y2="687.26" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-20" data-name="New Gradient Swatch 3" x1="725.24" y1="100.12" x2="406.72" y2="689.08" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-21" data-name="New Gradient Swatch 3" x1="725.24" y1="100.12" x2="406.72" y2="689.08" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-22" data-name="New Gradient Swatch 3" x1="728.6" y1="101.94" x2="410.08" y2="690.9" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-23" data-name="New Gradient Swatch 3" x1="728.6" y1="101.94" x2="410.08" y2="690.9" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-24" data-name="New Gradient Swatch 3" x1="731.97" y1="103.76" x2="413.44" y2="692.72" xlink:href="#New_Gradient_Swatch_3"/>
+    <linearGradient id="New_Gradient_Swatch_3-25" data-name="New Gradient Swatch 3" x1="731.97" y1="103.76" x2="413.44" y2="692.72" xlink:href="#New_Gradient_Swatch_3"/>
+  </defs>
+  <g id="Layer_2-2" data-name="Layer 2">
+    <g>
+      <path class="cls-3" d="m68.6,460.01L266.6,118.01h132l-66,114h132S579.6,32.01,596.6,3.01h-132l-66,115L332.6,3.01h-132C134.6,118.01,68.6,232.01,2.6,346.01l66,114ZM662.6,118.01c-66,114-132,228-198,342h-132l66,114h132s173-300,198-342l-66-114Zm-330,342l66-114h-132l-132,228h132l66-114h0Z"/>
+      <polygon class="cls-20" points="68.6 460.01 134.6 346.01 2.6 346.01 68.6 460.01"/>
+      <polygon class="cls-23" points="2.6 346.01 134.6 346.01 68.6 232.01 2.6 346.01"/>
+      <polygon class="cls-22" points="68.6 232.01 134.6 346.01 200.6 232.01 68.6 232.01"/>
+      <polygon class="cls-12" points="68.6 232.01 200.6 232.01 134.6 118.01 68.6 232.01"/>
+      <polygon class="cls-5" points="134.6 118.01 200.6 232.01 266.6 118.01 134.6 118.01"/>
+      <polygon class="cls-13" points="134.6 118.01 266.6 118.01 200.6 3.01 134.6 118.01"/>
+      <polygon class="cls-7" points="200.6 3.01 266.6 118.01 332.6 3.01 200.6 3.01"/>
+      <polygon class="cls-17" points="332.6 3.01 266.6 118.01 398.6 118.01 332.6 3.01"/>
+      <polygon class="cls-8" points="398.6 118.01 332.6 232.01 464.6 232.01 398.6 118.01"/>
+      <polygon class="cls-15" points="398.6 118.01 464.6 232.01 530.6 118.01 398.6 118.01"/>
+      <polygon class="cls-2" points="398.6 118.01 530.6 118.01 464.6 3.01 398.6 118.01"/>
+      <polygon class="cls-14" points="464.6 3.01 530.6 118.01 596.6 3.01 464.6 3.01"/>
+      <polygon class="cls-4" points="398.6 346.01 266.6 346.01 332.6 460.01 398.6 346.01"/>
+      <polygon class="cls-19" points="332.6 460.01 266.6 346.01 200.6 460.01 332.6 460.01"/>
+      <polygon class="cls-10" points="332.6 460.01 200.6 460.01 266.6 574.01 332.6 460.01"/>
+      <polygon class="cls-18" points="266.6 574.01 200.6 460.01 134.6 574.01 266.6 574.01"/>
+      <polygon class="cls-21" points="332.6 460.01 398.6 574.01 464.6 460.01 332.6 460.01"/>
+      <polygon class="cls-6" points="464.6 460.01 398.6 574.01 530.6 574.01 464.6 460.01"/>
+      <polygon class="cls-11" points="464.6 460.01 530.6 574.01 596.6 460.01 464.6 460.01"/>
+      <polygon class="cls-24" points="464.6 460.01 596.6 460.01 530.6 346.01 464.6 460.01"/>
+      <polygon class="cls-25" points="530.6 346.01 596.6 460.01 662.6 346.01 530.6 346.01"/>
+      <polygon class="cls-9" points="530.6 346.01 662.6 346.01 596.6 232.01 530.6 346.01"/>
+      <polygon class="cls-1" points="596.6 232.01 662.6 346.01 728.6 232.01 596.6 232.01"/>
+      <polygon class="cls-16" points="596.6 232.01 728.6 232.01 662.6 118.01 596.6 232.01"/>
+    </g>
+  </g>
+</svg>
