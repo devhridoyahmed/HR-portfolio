@@ -1,0 +1,21 @@
+.btn {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: $font-display;
+    transition: all .3s;
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba($color-white, .15);
+    }
+    
+    &__red {
+        background-color: $color-tertiary;
+        color: $color-white;
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+        }
+    }
+}
