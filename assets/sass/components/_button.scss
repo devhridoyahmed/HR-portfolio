@@ -5,6 +5,16 @@
     font-family: $font-display;
     transition: all .3s;
 
+    @include respond(tab-land) { //width < 992
+        font-size: 1.8rem; 
+    }
+    @include respond(tab-port) { //width < 768
+        font-size: 2rem;
+    }
+    @include respond(phone) { //width < 576
+        font-size: 2.5rem;
+    }
+
     &:hover {
         transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color-white, .15);
@@ -13,9 +23,11 @@
     &__red {
         background-color: $color-tertiary;
         color: $color-white;
+
         &:hover {
             background-color: $color-primary;
             color: $color-white;
         }
     }
+    
 }

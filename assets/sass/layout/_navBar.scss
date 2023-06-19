@@ -1,0 +1,107 @@
+.navbar {
+    width: 100vw;
+    background-color: $color-primary;
+    height: 5rem;
+    padding: 1rem;
+    --bs-navbar-toggler-border-color: none;
+    --bs-navbar-toggler-border-radius: none;
+    --bs-navbar-toggler-focus-width: none;
+    --bs-navbar-toggler-transition: none;
+
+    @include respond(tab-land) {
+        height: 6rem;
+    }
+    @include respond(phone) {
+        height: 7rem;
+    }
+
+    .navbar-brand {
+        height: 3.5rem;
+        width: max-content;
+        .navbar-logo {
+            height: 100%;
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+        border-radius: 0;
+
+        &-icon {
+            background-image: none;
+            width: 4rem;
+            height: 4rem;
+            
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        z-index: 100;
+
+        @include respond(tab-land) {
+            margin: 2rem 0 2rem 50%;
+        }
+    }
+
+    .navbar-nav {
+        text-align: center;
+        grid-gap: 1rem;
+        background-color: $color-primary;
+        
+        @include respond(tab-land) {
+            padding: 1rem;
+        }
+
+        .nav-item {
+            font-size: 1.7rem;
+            
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+
+            @include respond(tab-land) {
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+            .nav-link {
+                color: $color-white;
+                
+
+                &:link,
+                &:visited {
+                    color: $color-white;
+                    transition: all .2s;
+                }
+
+                &:hover,
+                &:active { 
+                    color: $color-secondary;
+                    text-shadow: 0 1rem 2rem rgba($color-white, .5);
+                    transform: scale(1.2); 
+                    position: relative;
+
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        height: 2px;
+                        background-color: $color-tertiary;
+
+                        animation-name: moveInMiddle;
+                        animation-duration: .3s;
+                        animation-timing-function: ease-out;
+                        animation-fill-mode: forwards;
+                    }
+
+                    &::before { top: 0; left: 0;}
+                    &::after { bottom: 0; right: 0;}
+                }
+            }
+        }
+    }
+    
+}
