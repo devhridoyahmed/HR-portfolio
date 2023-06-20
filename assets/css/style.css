@@ -101,10 +101,8 @@ body {
   width: 100%;
   z-index: -1;
   opacity: .9;
-  overflow: hidden; }
-  @media only screen and (max-width: 87.5em) {
-    .bg-video {
-      height: 100%; } }
+  overflow: hidden;
+  height: 100%; }
   .bg-video__content {
     height: 100%;
     width: 100%;
@@ -142,7 +140,7 @@ body {
   height: 100vh;
   padding: 4rem;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden; }
   .header__logo {
     width: 8rem;
@@ -192,7 +190,7 @@ body {
       margin-left: 1rem; }
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   background-color: #006dcf;
   height: 5rem;
   padding: 1rem;
@@ -234,6 +232,9 @@ body {
         padding: 1rem; } }
     .navbar .navbar-nav .nav-item {
       font-size: 1.7rem; }
+      @media only screen and (max-width: 35.9375em) {
+        .navbar .navbar-nav .nav-item {
+          font-size: 2.5rem; } }
       .navbar .navbar-nav .nav-item:not(:last-child) {
         margin-right: 3rem; }
       @media only screen and (max-width: 62em) {
@@ -241,6 +242,10 @@ body {
           margin-right: 0; } }
       .navbar .navbar-nav .nav-item .nav-link {
         color: #ffffff; }
+        @media only screen and (max-width: 62em) {
+          .navbar .navbar-nav .nav-item .nav-link {
+            display: inline-block;
+            padding: .5rem 2rem; } }
         .navbar .navbar-nav .nav-item .nav-link:link, .navbar .navbar-nav .nav-item .nav-link:visited {
           color: #ffffff;
           transition: all .2s; }
