@@ -1,6 +1,96 @@
 .about {
 
-    &__heading {
-        text-align: center; 
+    &__main{
+        width: 100%;
+        margin: 3rem 0;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(tab-land) {
+            flex-direction: column;
+        }
+    }
+
+    &__mainText {
+        padding: 1.5rem;
+
+        &--heading1 {
+            color: lighten($color-secondary-light, 10);
+            font-size: 2.5rem;
+            letter-spacing: .15rem;
+            line-height: 1.6;
+        }
+
+        &--heading2 {
+            color: lighten($color-secondary-light, 10);
+            font-size: 2rem;
+            letter-spacing: .15rem;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        &--paragraph1,
+        &--paragraph2,
+        &--paragraph3 {
+            color: $color-light-2;
+            font-size: 1.5rem;
+            line-height: 2;
+        }
+    }
+
+    &__mainImage{
+        padding: 5rem 15rem;
+
+        @include respond(laptop-mini) {
+            padding: 5rem 10rem;
+        }
+
+        &--box1 {
+            width: 100%;
+            z-index: 20;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border: 2px solid $color-secondary-light;
+                background-color: transparent;
+                z-index: -1;
+            }
+
+            &::before {
+                top: -2rem;
+                right: -2rem;
+            }
+        }
+
+        &--box2{
+            width: 100%;
+            z-index: 20;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border: 2px solid $color-secondary-light;
+                background-color: transparent;
+                z-index: -1;
+            }
+
+            &::before {
+                bottom: -2rem;
+                left: -2rem;
+            }
+        }
+
+        &--image {
+            width: 100%;
+        }
+
+        
     }
 }

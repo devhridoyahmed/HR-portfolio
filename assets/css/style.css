@@ -64,6 +64,9 @@ body {
   background-color: #006dcf;
   color: #DFFF00; }
 
+.headingBox {
+  text-align: center; }
+
 .heading__primary {
   font-size: 4.5rem;
   padding: 1rem;
@@ -93,6 +96,14 @@ body {
       .heading__primary--light:hover::after {
         bottom: 0;
         right: 0; }
+
+.marker {
+  font-style: italic;
+  transition: all .3s; }
+  .marker:hover {
+    text-shadow: 0 0.3rem 2rem #ffffff; }
+  .marker--light {
+    color: white; }
 
 .bg-video {
   position: absolute;
@@ -133,8 +144,70 @@ body {
       background-color: #006dcf;
       color: #ffffff; }
 
-.about__heading {
-  text-align: center; }
+.about__main {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 62em) {
+    .about__main {
+      flex-direction: column; } }
+
+.about__mainText {
+  padding: 1.5rem; }
+  .about__mainText--heading1 {
+    color: #ecff66;
+    font-size: 2.5rem;
+    letter-spacing: .15rem;
+    line-height: 1.6; }
+  .about__mainText--heading2 {
+    color: #ecff66;
+    font-size: 2rem;
+    letter-spacing: .15rem;
+    line-height: 1.6;
+    font-weight: 400; }
+  .about__mainText--paragraph1, .about__mainText--paragraph2, .about__mainText--paragraph3 {
+    color: #d5d6d6;
+    font-size: 1.5rem;
+    line-height: 2; }
+
+.about__mainImage {
+  padding: 5rem 15rem; }
+  @media only screen and (max-width: 75em) {
+    .about__mainImage {
+      padding: 5rem 10rem; } }
+  .about__mainImage--box1 {
+    height: 100%;
+    z-index: 20;
+    position: relative; }
+    .about__mainImage--box1::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 2px solid #e5ff33;
+      background-color: transparent;
+      z-index: -1; }
+    .about__mainImage--box1::before {
+      top: -2rem;
+      right: -2rem; }
+  .about__mainImage--box2 {
+    width: 100%;
+    z-index: 20;
+    position: relative; }
+    .about__mainImage--box2::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border: 2px solid #e5ff33;
+      background-color: transparent;
+      z-index: -1; }
+    .about__mainImage--box2::before {
+      bottom: -2rem;
+      left: -2rem; }
+  .about__mainImage--image {
+    width: 100%; }
 
 .header {
   height: 100vh;
@@ -239,7 +312,8 @@ body {
         margin-right: 3rem; }
       @media only screen and (max-width: 62em) {
         .navbar .navbar-nav .nav-item:not(:last-child) {
-          margin-right: 0; } }
+          margin-right: 0;
+          border-bottom: 1px solid #ffffff; } }
       .navbar .navbar-nav .nav-item .nav-link {
         color: #ffffff; }
         @media only screen and (max-width: 62em) {

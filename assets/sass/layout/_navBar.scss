@@ -68,6 +68,7 @@
             @include respond(tab-land) {
                 &:not(:last-child) {
                     margin-right: 0;
+                    border-bottom: 1px solid $color-white;
                 }
             }
             .nav-link {
