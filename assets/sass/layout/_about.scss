@@ -19,6 +19,10 @@
             font-size: 2.5rem;
             letter-spacing: .15rem;
             line-height: 1.6;
+
+            @include respond(phone) {
+                font-size: 3.5rem;
+            }
         }
 
         &--heading2 {
@@ -27,6 +31,10 @@
             letter-spacing: .15rem;
             line-height: 1.6;
             font-weight: 400;
+
+            @include respond(phone) {
+                font-size: 2.5rem;
+            }
         }
 
         &--paragraph1,
@@ -35,6 +43,12 @@
             color: $color-light-2;
             font-size: 1.5rem;
             line-height: 2;
+            text-align: justify;
+            text-indent: 5rem;
+
+            @include respond(phone) {
+                font-size: 2rem;
+            }
         }
     }
 
@@ -42,6 +56,9 @@
         padding: 5rem 15rem;
 
         @include respond(laptop-mini) {
+            padding: 5rem 20rem;
+        }
+        @include respond(phone) {
             padding: 5rem 10rem;
         }
 
@@ -89,8 +106,7 @@
 
         &--image {
             width: 100%;
-        }
-
-        
+            margin: auto 0;
+        }   
     }
 }
