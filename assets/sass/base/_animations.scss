@@ -7,3 +7,27 @@
         width: 50%;
     }
 }
+
+@keyframes load {
+    to {
+      width: var(--width);
+    }
+  }
+
+// @keyframes glitch {
+//     0%, 5% {
+//       transform: translate(0, 0);
+//     }
+//     1% {
+//       transform: translate(-2%, -5%);
+//     }
+//     2% {
+//       transform: translate(5%, 10%);
+//     }
+//     3%{
+//       transform: translate(-15%, 5%);
+//     }
+//     4% {
+//       transform: translate(2%, -10%);
+//     }
+// }
