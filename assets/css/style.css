@@ -140,12 +140,14 @@ body {
   left: 0;
   width: 100%;
   z-index: -1;
-  opacity: .9;
-  overflow: hidden; }
+  opacity: .8;
+  overflow: hidden;
+  height: 100%; }
   .bg-video__content {
     height: 100%;
     width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    position: fixed; }
 
 .btn {
   padding: 1rem 3rem;
