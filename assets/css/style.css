@@ -142,8 +142,7 @@ body {
   z-index: -1;
   opacity: .9;
   overflow: hidden;
-  min-height: 100%;
-  min-width: 100%; }
+  min-height: 100%; }
   .bg-video__content {
     height: 100%;
     width: 100%;
