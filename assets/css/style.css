@@ -69,7 +69,9 @@ body {
   color: #DFFF00; }
 
 .headingBox {
-  text-align: center; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .heading__primary {
   font-size: 4.5rem;
@@ -77,7 +79,8 @@ body {
   font-family: "Expletus Sans", cursive !important;
   font-weight: 600;
   text-transform: uppercase;
-  display: inline-block; }
+  display: inline-block;
+  z-index: 10; }
   .heading__primary--light {
     color: #36a0ff;
     position: relative;
@@ -124,6 +127,17 @@ body {
       .heading__primary--dark:hover::after {
         bottom: 0;
         right: 0; }
+  .heading__primary--bg {
+    font-size: 4.5rem;
+    font-family: "Expletus Sans", cursive !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%) scale(1.6);
+    z-index: 5;
+    color: rgba(234, 235, 235, 0.1); }
 
 .marker {
   font-style: italic;
@@ -140,14 +154,15 @@ body {
   left: 0;
   width: 100%;
   z-index: -1;
-  opacity: .8;
+  opacity: .7;
   overflow: hidden;
   height: 100%; }
   .bg-video__content {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: fixed; }
+    position: fixed;
+    z-index: -100; }
 
 .btn {
   padding: 1rem 3rem;
@@ -271,32 +286,34 @@ body {
   .eduSkill__education--box1, .eduSkill__education--box2, .eduSkill__education--box3 {
     margin-top: 2rem;
     margin-right: 10rem;
-    padding: 2rem;
+    padding: 2rem 4rem;
+    transform: skew(-30deg);
     /* From https://css.glass */
-    background: rgba(229, 255, 51, 0.1);
-    border-radius: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0.5rem 3rem rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(3.4px);
     -webkit-backdrop-filter: blur(3.4px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(223, 255, 0, 0.3);
     transition: all .3s; }
     .eduSkill__education--box1:hover, .eduSkill__education--box2:hover, .eduSkill__education--box3:hover {
-      background: rgba(219, 65, 88, 0.2);
-      box-shadow: 0 0.5rem 3rem rgba(229, 255, 51, 0.2);
-      transform: scale(1.1); }
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0.5rem 3rem rgba(234, 235, 235, 0.2);
+      transform: scale(1.1) skew(-30deg); }
       .eduSkill__education--box1:hover .eduSkill__education--title, .eduSkill__education--box2:hover .eduSkill__education--title, .eduSkill__education--box3:hover .eduSkill__education--title {
-        color: #f9ffcc; }
+        color: #b2cc00; }
     @media only screen and (max-width: 35.9375em) {
       .eduSkill__education--box1, .eduSkill__education--box2, .eduSkill__education--box3 {
         margin-right: 0; } }
   .eduSkill__education--title {
     color: #ffffff;
     margin-bottom: 1rem;
-    font-size: 2rem; }
+    font-size: 2rem;
+    transform: skew(30deg); }
   .eduSkill__education--para1, .eduSkill__education--para2 {
     color: #ffffff;
     font-size: 1.5rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    transform: skew(30deg); }
 
 .eduSkill__skill {
   padding: 1rem; }
@@ -313,7 +330,7 @@ body {
     display: grid;
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 3rem;
-    padding: 3rem 0 7.5rem; }
+    padding-top: 4rem; }
     @media only screen and (max-width: 62em) {
       .eduSkill__skill--box {
         padding: 3rem 0 2.5rem; } }
@@ -326,7 +343,12 @@ body {
   transform: skew(30deg);
   font-family: "Expletus Sans", cursive !important;
   outline: 1px solid #b2cc00;
-  outline-offset: .3rem; }
+  outline-offset: .3rem;
+  transition: all .3s; }
+  .range:hover {
+    transform: skew(30deg) scale(1.1); }
+    .range:hover .range__label {
+      color: #b2cc00; }
   .range:not(:last-child) {
     margin-bottom: 2rem; }
   .range::before {
@@ -352,7 +374,7 @@ body {
     font-weight: 800;
     font-size: 1.5rem; }
   .range__label {
-    transform: skew(-30deg) translateY(-125%);
+    transform: skew(-30deg) translateY(-105%);
     line-height: 1.5;
     font-size: 2rem;
     color: #ffffff; }
@@ -361,7 +383,7 @@ body {
   height: 100vh;
   padding: 4rem;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   overflow: hidden; }
   .header__logo {
     width: 8rem;

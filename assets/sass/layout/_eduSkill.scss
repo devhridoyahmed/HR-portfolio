@@ -24,24 +24,25 @@
         &--box3 {
             margin-top: 2rem;
             margin-right: 10rem;
-            padding: 2rem;
+            padding: 2rem 4rem;
+            transform: skew(-30deg);
 
             /* From https://css.glass */
-            background: rgba($color-secondary-light, 0.10);
-            border-radius: 1.5rem;
+            background: rgba($color-white, 0.10);
+            
             box-shadow: 0 .5rem 3rem rgba($color-white, 0.1);
             backdrop-filter: blur(3.4px);
             -webkit-backdrop-filter: blur(3.4px);
-            border: 1px solid rgba($color-white, 0.3);
+            border: 1px solid rgba($color-secondary, 0.3);
             transition: all .3s;
 
             &:hover {
-                background: rgba($color-tertiary-light, 0.20);
-                box-shadow: 0 .5rem 3rem rgba($color-secondary-light, 0.2);
-                transform: scale(1.1);
+                background: rgba($color-white, 0.20);
+                box-shadow: 0 .5rem 3rem rgba($color-light-1, 0.2);
+                transform: scale(1.1) skew(-30deg);
 
                 .eduSkill__education--title {
-                    color: lighten($color-secondary, 40);
+                    color: $color-secondary-dark;
                 }
             }
 
@@ -54,6 +55,7 @@
             color: $color-white;
             margin-bottom: 1rem;
             font-size: 2rem;
+            transform: skew(30deg);
         }
 
         &--para1,
@@ -61,6 +63,7 @@
             color: $color-white;
             font-size: 1.5rem;
             margin-bottom: 0;
+            transform: skew(30deg);
         }
     }
 
@@ -82,7 +85,7 @@
             display: grid;
             grid-template-rows: repeat(5, 1fr);
             grid-gap: 3rem;
-            padding: 3rem 0 7.5rem;
+            padding-top: 4rem;
 
             @include respond(tab-land) {
                 padding: 3rem 0 2.5rem; 
@@ -100,6 +103,15 @@
     font-family: $font-display;
     outline: 1px solid $color-secondary-dark;
     outline-offset: .3rem;
+    transition: all .3s;
+
+    &:hover {
+        transform: skew(30deg) scale(1.1);
+
+        .range__label {
+            color: $color-secondary-dark;
+        }
+    }
 
     &:not(:last-child) {
         margin-bottom: 2rem;
@@ -133,7 +145,7 @@
     }
     
     &__label {
-        transform: skew(-30deg) translateY(-125%);
+        transform: skew(-30deg) translateY(-105%);
         line-height: 1.5;
         font-size: 2rem;
         color: $color-white;
