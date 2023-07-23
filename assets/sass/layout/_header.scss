@@ -46,7 +46,7 @@
     &__heading--1 {
         font-family: $font-display;
         grid-row: 3 / 4;
-        color: lighten($color-primary, 20);
+        color: lighten($color-primary, 0);
         font-size: 8rem;
 
         @include respond(phone) { //width < 576
