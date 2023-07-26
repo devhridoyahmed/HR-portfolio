@@ -209,51 +209,62 @@ body {
       background-color: #B52C00;
       color: #DFF6FF; }
 
-.form {
-  width: 100%; }
-  .form__group {
-    margin-bottom: 1rem; }
-  .form__group--grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem; }
-  .form__input {
-    font-size: 1.5rem;
-    font-family: inherit;
-    color: inherit;
-    padding: 1rem 2rem;
-    border-radius: 2px;
-    background-color: rgba(223, 246, 255, 0.7);
-    border: none;
-    border-bottom: 3px solid transparent;
-    width: 100%;
-    display: block;
-    transition: all .3s; }
-    .form__input--text {
-      height: 16rem;
-      resize: none; }
-    .form__input:focus {
-      outline: none;
-      box-shadow: 0 1rem 2rem rgba(6, 40, 61, 0.1);
-      border-bottom: 3px solid #FFDF08; }
-    .form__input:focus:invalid {
-      border-bottom: 3px solid #B52C00; }
-    .form__input::-webkit-input-placeholder {
-      color: #012F78; }
-  .form__label {
-    font-size: 1.7rem;
-    font-weight: 700;
-    margin-left: 2rem;
-    margin-top: .7rem;
-    display: block;
-    transition: all .3s; }
-  .form__btn {
-    color: #DFF6FF;
-    background-color: #1F75FE;
-    margin-top: 1rem; }
-    .form__btn:hover, .form__btn:active {
-      background-color: #FF2A08;
-      color: #DFF6FF; }
+@media only screen and (max-width: 35.9375em) {
+  .form {
+    margin-top: 3rem; } }
+
+.form__group {
+  margin-bottom: 1rem; }
+
+.form__group--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem; }
+  @media only screen and (max-width: 35.9375em) {
+    .form__group--grid {
+      grid-template-rows: repeat(2, min-content);
+      grid-gap: 0rem;
+      grid-template-columns: 1fr; } }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(223, 246, 255, 0.7);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all .3s; }
+  .form__input--text {
+    height: 16rem;
+    resize: none; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(6, 40, 61, 0.1);
+    border-bottom: 3px solid #FFDF08; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid #B52C00; }
+  .form__input::-webkit-input-placeholder {
+    color: #012F78; }
+
+.form__label {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__btn {
+  color: #DFF6FF;
+  background-color: #1F75FE;
+  margin-top: 1rem; }
+  .form__btn:hover, .form__btn:active {
+    background-color: #FF2A08;
+    color: #DFF6FF; }
 
 .about__main {
   width: 100%;
@@ -339,9 +350,36 @@ body {
   background-image: linear-gradient(rgba(108, 162, 248, 0.7), rgba(31, 117, 254, 0.7)), url("../image/contact-bg.jpg");
   background-size: cover;
   background-position: center; }
-  .contact__main {
+  .contact__box {
     background-color: rgba(6, 40, 61, 0.5);
-    padding: 2rem; }
+    padding: 5rem;
+    padding-bottom: 3rem; }
+  .contact__main {
+    padding: 3rem; }
+  .contact__details {
+    padding: 3.5rem 3rem 0 0;
+    display: grid;
+    grid-template-rows: repeat(3, min-content) 1fr; }
+    @media only screen and (max-width: 62em) {
+      .contact__details {
+        padding: 3.5rem 0 0 0; } }
+    .contact__details > iframe {
+      outline: #FFDF08;
+      outline-width: 2px;
+      outline-style: solid;
+      outline-offset: 2px; }
+  .contact__row {
+    display: flex;
+    color: #DFF6FF;
+    margin-bottom: 3rem; }
+    .contact__row--icon {
+      margin-right: 3rem;
+      font-size: 3rem; }
+    .contact__row--text {
+      font-size: 2rem; }
+      .contact__row--text > a {
+        text-decoration: none;
+        color: #DFF6FF; }
 
 .eduSkill__main {
   margin: 3rem 0 1.5rem;
@@ -468,11 +506,14 @@ body {
     color: #c0c2c2;
     margin-bottom: 0; }
   .footer__links {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
     list-style: none;
-    gap: 3.5rem;
     margin-bottom: 0; }
+    @media only screen and (max-width: 62em) {
+      .footer__links {
+        grid-template-columns: repeat(3, 1fr); } }
   .footer__social--link {
     text-decoration: none;
     color: #DFF6FF;
@@ -482,6 +523,12 @@ body {
     font-size: 3rem;
     transform: translateY(3px);
     margin-right: .5rem; }
+  .footer__copyright {
+    text-align: center;
+    margin-top: 1.5rem; }
+    .footer__copyright--text {
+      color: #DFF6FF;
+      font-size: 1.5rem; }
 
 .header {
   height: 100vh;
