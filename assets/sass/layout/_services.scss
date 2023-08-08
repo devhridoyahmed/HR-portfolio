@@ -1,0 +1,80 @@
+.services {
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        @include respond(tab-land) { 
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    
+    &__box1,
+    &__box2 {
+        display: grid;
+        grid-template-rows: repeat(3, min-content) 1fr min-content; 
+
+        margin-top: 2rem;
+        padding: 4rem 6rem;
+        width: 40%;
+
+        @include respond(tab-land) { 
+            width: 80%;
+        }
+
+        /* From https://css.glass */
+        background: rgba($color-white, 0.10);
+        
+        box-shadow: 0 .5rem 3rem rgba($color-white, 0.1);
+        backdrop-filter: blur(3.4px);
+        -webkit-backdrop-filter: blur(3.4px);
+        border: 1px solid rgba($color-secondary, 0.3);
+        border-radius: 3px; 
+        transition: all .3s;
+    }
+
+    &__heading {
+        text-align: center;
+        grid-row: 1/2;
+    }
+
+    &__subheading {
+        grid-row: 2/3;
+        font-size: 2.5rem;
+        color: $color-white;
+        margin: 1.5rem 0;
+
+    }
+
+    &__list {
+        list-style-type: "💠";
+        padding: 1rem 3rem 1rem 2rem;
+        grid-row: 3/4;
+
+        :not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+    &__details {
+        color: $color-white;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    &__btn {
+        color: $color-white;
+        background-color: $color-primary;
+        align-self: center;
+        justify-self: center;
+        grid-row: 5/6;
+
+        &:hover,
+        &:active {
+            background-color: $color-tertiary;
+            color: $color-white;
+        }
+    }
+}
