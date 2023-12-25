@@ -664,16 +664,85 @@ body {
   margin-top: 3rem;
   display: flex;
   justify-content: center;
-  gap: 4rem; }
+  gap: 4rem;
+  margin-bottom: 3vh; }
 
 .portfolio__tab {
   font-size: 1.6rem;
   font-weight: 600;
   padding: 1rem 1.5rem; }
 
+.portfolio__btn {
+  border-radius: 5% !important; }
+  .portfolio__btn:hover, .portfolio__btn:focus {
+    color: #eaebeb; }
+
+.portfolio__contents {
+  margin-top: 4rem; }
+
+.portfolio__content {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.5vw; }
+  .portfolio__content--box {
+    transition: 1s all linear;
+    overflow: hidden; }
+    .portfolio__content--box:hover .portfolio__content--link {
+      visibility: visible; }
+    .portfolio__content--box:hover .portfolio__content--link1 {
+      top: -50%;
+      left: 20%; }
+    .portfolio__content--box:hover .portfolio__content--link2 {
+      top: -50%;
+      right: -30%; }
+    .portfolio__content--box:hover .portfolio__content--img {
+      webkit-filter: blur(2px);
+      /* Chrome, Safari, Opera */
+      filter: blur(2px); }
+  .portfolio__content--link {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: "Expletus Sans", cursive !important;
+    transition: all 0.3s;
+    color: #DFF6FF;
+    background-color: #1F75FE;
+    visibility: hidden; }
+    .portfolio__content--link:hover, .portfolio__content--link:active {
+      background-color: #FF2A08;
+      color: #DFF6FF;
+      transform: translateY(-0.3rem);
+      box-shadow: 0 1rem 2rem rgba(255, 143, 96, 0.15); }
+    @media only screen and (max-width: 62em) {
+      .portfolio__content--link {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 35.9375em) {
+      .portfolio__content--link {
+        font-size: 2rem; } }
+    .portfolio__content--link1 {
+      top: -50%;
+      left: -25%; }
+    .portfolio__content--link2 {
+      top: -50%;
+      right: -76%; }
+  .portfolio__content--img {
+    width: 100%;
+    border-radius: 1%;
+    transition: all ease 0.25s; }
+
 .nav-tabs {
   --bs-nav-tabs-border-width: 0;
   --bs-nav-tabs-border-radius: 0; }
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #DFF6FF;
+  background-color: #1F75FE; }
 
 .services__main {
   display: flex;
