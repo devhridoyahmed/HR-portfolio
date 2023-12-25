@@ -1,5 +1,5 @@
 .portfolio {
-    // overflow: hidden;
+  // overflow: hidden;
 
   &__tabs {
     margin-top: 3rem;
@@ -7,12 +7,23 @@
     justify-content: center;
     gap: 4rem;
     margin-bottom: 3vh;
+
+    @include respond(phone) {
+      //width < 576
+      gap: 2rem;
+    }
   }
 
   &__tab {
     font-size: 1.6rem;
     font-weight: 600;
     padding: 1rem 1.5rem;
+
+    @include respond(phone) {
+      //width < 576
+      font-size: 2rem;
+      padding: 1.5rem 2rem;
+    }
   }
 
   &__btn {
@@ -34,25 +45,45 @@
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 1.5vw;
 
+    @include respond(tab-land) {
+      //width < 768
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    @include respond(phone) {
+      //width < 576
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
     &--box {
-      transition: 1s all linear; 
+      transition: 1s all linear;
       overflow: hidden;
 
-      &:hover .portfolio__content--link{
+      &:hover .portfolio__content--link,
+      &:focus .portfolio__content--link,
+      &:active .portfolio__content--link {
         visibility: visible;
       }
 
-      &:hover .portfolio__content--link1 {
+      &:hover .portfolio__content--link1,
+      &:focus .portfolio__content--link,
+      &:active .portfolio__content--link {
         top: -50%;
         left: 20%;
       }
 
-      &:hover .portfolio__content--link2 {
+      &:hover .portfolio__content--link2,
+      &:focus .portfolio__content--link,
+      &:active .portfolio__content--link {
         top: -50%;
         right: -30%;
       }
 
-      &:hover .portfolio__content--img {
+      &:hover .portfolio__content--img,
+      &:focus .portfolio__content--link,
+      &:active .portfolio__content--link {
         webkit-filter: blur(2px); /* Chrome, Safari, Opera */
         filter: blur(2px);
       }
@@ -104,7 +135,6 @@
       width: 100%;
       border-radius: 1%;
       transition: all ease 0.25s;
-
     }
   }
 }

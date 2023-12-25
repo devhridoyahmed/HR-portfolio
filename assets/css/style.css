@@ -666,11 +666,18 @@ body {
   justify-content: center;
   gap: 4rem;
   margin-bottom: 3vh; }
+  @media only screen and (max-width: 35.9375em) {
+    .portfolio__tabs {
+      gap: 2rem; } }
 
 .portfolio__tab {
   font-size: 1.6rem;
   font-weight: 600;
   padding: 1rem 1.5rem; }
+  @media only screen and (max-width: 35.9375em) {
+    .portfolio__tab {
+      font-size: 2rem;
+      padding: 1.5rem 2rem; } }
 
 .portfolio__btn {
   border-radius: 5% !important; }
@@ -685,18 +692,34 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1.5vw; }
+  @media only screen and (max-width: 62em) {
+    .portfolio__content {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr); } }
+  @media only screen and (max-width: 35.9375em) {
+    .portfolio__content {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; } }
   .portfolio__content--box {
     transition: 1s all linear;
     overflow: hidden; }
-    .portfolio__content--box:hover .portfolio__content--link {
+    .portfolio__content--box:hover .portfolio__content--link,
+    .portfolio__content--box:focus .portfolio__content--link,
+    .portfolio__content--box:active .portfolio__content--link {
       visibility: visible; }
-    .portfolio__content--box:hover .portfolio__content--link1 {
+    .portfolio__content--box:hover .portfolio__content--link1,
+    .portfolio__content--box:focus .portfolio__content--link,
+    .portfolio__content--box:active .portfolio__content--link {
       top: -50%;
       left: 20%; }
-    .portfolio__content--box:hover .portfolio__content--link2 {
+    .portfolio__content--box:hover .portfolio__content--link2,
+    .portfolio__content--box:focus .portfolio__content--link,
+    .portfolio__content--box:active .portfolio__content--link {
       top: -50%;
       right: -30%; }
-    .portfolio__content--box:hover .portfolio__content--img {
+    .portfolio__content--box:hover .portfolio__content--img,
+    .portfolio__content--box:focus .portfolio__content--link,
+    .portfolio__content--box:active .portfolio__content--link {
       webkit-filter: blur(2px);
       /* Chrome, Safari, Opera */
       filter: blur(2px); }
