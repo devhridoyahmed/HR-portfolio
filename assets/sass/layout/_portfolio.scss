@@ -46,9 +46,9 @@
     grid-gap: 1.5vw;
 
     @include respond(tab-land) {
-      //width < 768
+      //width < 992
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: 1fr;
     }
 
     @include respond(phone) {
