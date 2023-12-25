@@ -708,15 +708,35 @@ body {
     .portfolio__content--box:active .portfolio__content--link {
       visibility: visible; }
     .portfolio__content--box:hover .portfolio__content--link1,
-    .portfolio__content--box:focus .portfolio__content--link,
-    .portfolio__content--box:active .portfolio__content--link {
+    .portfolio__content--box:focus .portfolio__content--link1,
+    .portfolio__content--box:active .portfolio__content--link1 {
       top: -50%;
       left: 20%; }
+      @media only screen and (max-width: 62em) {
+        .portfolio__content--box:hover .portfolio__content--link1,
+        .portfolio__content--box:focus .portfolio__content--link1,
+        .portfolio__content--box:active .portfolio__content--link1 {
+          left: 10%; } }
+      @media only screen and (max-width: 35.9375em) {
+        .portfolio__content--box:hover .portfolio__content--link1,
+        .portfolio__content--box:focus .portfolio__content--link1,
+        .portfolio__content--box:active .portfolio__content--link1 {
+          left: 20%; } }
     .portfolio__content--box:hover .portfolio__content--link2,
-    .portfolio__content--box:focus .portfolio__content--link,
-    .portfolio__content--box:active .portfolio__content--link {
+    .portfolio__content--box:focus .portfolio__content--link2,
+    .portfolio__content--box:active .portfolio__content--link2 {
       top: -50%;
       right: -30%; }
+      @media only screen and (max-width: 62em) {
+        .portfolio__content--box:hover .portfolio__content--link2,
+        .portfolio__content--box:focus .portfolio__content--link2,
+        .portfolio__content--box:active .portfolio__content--link2 {
+          right: -20%; } }
+      @media only screen and (max-width: 35.9375em) {
+        .portfolio__content--box:hover .portfolio__content--link2,
+        .portfolio__content--box:focus .portfolio__content--link2,
+        .portfolio__content--box:active .portfolio__content--link2 {
+          right: -30%; } }
     .portfolio__content--box:hover .portfolio__content--img,
     .portfolio__content--box:focus .portfolio__content--link,
     .portfolio__content--box:active .portfolio__content--link {

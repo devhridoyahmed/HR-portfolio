@@ -68,17 +68,37 @@
       }
 
       &:hover .portfolio__content--link1,
-      &:focus .portfolio__content--link,
-      &:active .portfolio__content--link {
+      &:focus .portfolio__content--link1,
+      &:active .portfolio__content--link1 {
         top: -50%;
         left: 20%;
+
+        @include respond(tab-land) {
+          //width < 992
+          left: 10%;
+        }
+
+        @include respond(phone) {
+          //width < 576
+          left: 20%;
+        }
       }
 
       &:hover .portfolio__content--link2,
-      &:focus .portfolio__content--link,
-      &:active .portfolio__content--link {
+      &:focus .portfolio__content--link2,
+      &:active .portfolio__content--link2 {
         top: -50%;
         right: -30%;
+
+        @include respond(tab-land) {
+          //width < 992
+          right: -20%;
+        }
+
+        @include respond(phone) {
+          //width < 576
+          right: -30%;
+        }
       }
 
       &:hover .portfolio__content--img,
