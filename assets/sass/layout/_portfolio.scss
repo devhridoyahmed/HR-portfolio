@@ -92,7 +92,7 @@
 
         @include respond(tab-land) {
           //width < 992
-          right: -22%;
+          right: -18%;
         }
 
         @include respond(phone) {

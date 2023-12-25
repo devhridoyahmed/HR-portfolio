@@ -731,7 +731,7 @@ body {
         .portfolio__content--box:hover .portfolio__content--link2,
         .portfolio__content--box:focus .portfolio__content--link2,
         .portfolio__content--box:active .portfolio__content--link2 {
-          right: -22%; } }
+          right: -18%; } }
       @media only screen and (max-width: 35.9375em) {
         .portfolio__content--box:hover .portfolio__content--link2,
         .portfolio__content--box:focus .portfolio__content--link2,
