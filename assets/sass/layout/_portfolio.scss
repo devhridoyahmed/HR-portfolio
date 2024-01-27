@@ -42,7 +42,8 @@
   &__content {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-gap: 1.5vw;
 
     @include respond(tab-land) {

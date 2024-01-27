@@ -65,11 +65,11 @@
         transition: all .3s; 
     }
   
-    // &__input:placeholder-shown +  &__label {
-        // opacity: 0;
-    //     visibility: hidden;
-    //     transform: translateY(4rem);
-    // }
+    &__input:placeholder-shown +  &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(4rem);
+    }
   
     &__btn {
       color: $color-white;
