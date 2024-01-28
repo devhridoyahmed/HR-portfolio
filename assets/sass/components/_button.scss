@@ -26,5 +26,10 @@
             color: $color-white;
         }
     }
+
+    &__modal {
+        opacity: 0;
+        display: none;
+    }
     
 }

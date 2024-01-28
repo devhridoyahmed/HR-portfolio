@@ -253,6 +253,9 @@ body {
     .btn__red:hover {
       background-color: #B52C00;
       color: #DFF6FF; }
+  .btn__modal {
+    opacity: 0;
+    display: none; }
 
 .form {
   padding: 0rem 3rem; }
@@ -312,6 +315,9 @@ body {
     .form__btn:hover, .form__btn:active {
       background-color: #FF2A08;
       color: #DFF6FF; }
+
+.modal-content {
+  background-color: rgba(223, 246, 255, 0.9); }
 
 #sentence {
   overflow: hidden;
@@ -723,6 +729,9 @@ body {
   background-color: #012F78;
   height: 5rem;
   padding: 1rem;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
   --bs-navbar-toggler-border-color: none;
   --bs-navbar-toggler-border-radius: none;
   --bs-navbar-toggler-focus-width: none;
@@ -775,10 +784,10 @@ body {
         @media only screen and (max-width: 62em) {
           .navbar .navbar-nav .nav-item .nav-link {
             display: inline-block;
-            padding: .5rem 2rem; } }
+            padding: 0.5rem 2rem; } }
         .navbar .navbar-nav .nav-item .nav-link:link, .navbar .navbar-nav .nav-item .nav-link:visited {
           color: #DFF6FF;
-          transition: all .2s; }
+          transition: all 0.2s; }
         .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active {
           color: #FFDF08;
           text-shadow: 0 1rem 2rem rgba(223, 246, 255, 0.5);
@@ -790,7 +799,7 @@ body {
             height: 2px;
             background-color: #FF2A08;
             animation-name: moveInMiddle;
-            animation-duration: .3s;
+            animation-duration: 0.3s;
             animation-timing-function: ease-out;
             animation-fill-mode: forwards; }
           .navbar .navbar-nav .nav-item .nav-link:hover::before, .navbar .navbar-nav .nav-item .nav-link:active::before {

@@ -42,17 +42,34 @@ inputAll.forEach((input) => {
 
 // form submission prevent default
 
+const btnModal = document.getElementById("btnModal");
+
 window.addEventListener("load", function () {
   const form = document.getElementById("my-form");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     const data = new FormData(form);
+    console.log(data);
     const action = e.target.action;
     fetch(action, {
       method: "POST",
       body: data,
-    }).then(() => {
-      form.reset();
-    });
+    })
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((resData) => {
+        console.log(resData);
+        if (resData.result === "success") {
+          form.reset();
+          btnModal.click();
+        }
+      })
+      .catch(() =>
+        alert(
+          "Something went wrong! Please try again. Sorry for the inconvenience. 😔"
+        )
+      );
   });
 });

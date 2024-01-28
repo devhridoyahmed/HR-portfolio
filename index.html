@@ -37,7 +37,7 @@
 
   <body>
     <!-- header part start here -->
-    <header class="header">
+    <header class="header" id="secHeader">
       <div class="bg-video">
         <video
           class="bg-video__content"
@@ -116,19 +116,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#secHeader">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#secAbout">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#secServices">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#secPortfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#secContact">Contact</a>
             </li>
           </ul>
         </div>
@@ -137,7 +137,7 @@
     <!-- nav part end here -->
 
     <!-- about me section start here  -->
-    <section class="about">
+    <section class="about" id="secAbout">
       <div class="headingBox m-auto">
         <h2 class="heading__primary heading__primary--light">About Myself</h2>
         <h3 class="heading__primary--bg">About Myself</h3>
@@ -196,7 +196,7 @@
     <!-- about me section end here  -->
 
     <!-- education and skill section start here -->
-    <section class="eduSkill">
+    <section class="eduSkill" id="secEduskill">
       <div class="headingBox m-auto">
         <h2 class="heading__primary heading__primary--dark">
           Education & Skill
@@ -269,7 +269,7 @@
     <!-- education and skill section end here -->
 
     <!-- services section start here -->
-    <section class="services">
+    <section class="services" id="secServices">
       <div class="headingBox m-auto mb--m">
         <h2 class="heading__primary heading__primary--light">Services</h2>
         <h3 class="heading__primary--bg">Services</h3>
@@ -339,7 +339,7 @@
     <!-- Invitation section end here -->
 
     <!-- portfolio section start here -->
-    <section class="portfolio">
+    <section class="portfolio" id="secPortfolio">
       <div class="headingBox m-auto">
         <h2 class="heading__primary heading__primary--light">My Works</h2>
         <h3 class="heading__primary--bg">Portfolio</h3>
@@ -704,7 +704,7 @@
     <!-- portfolio section end here -->
 
     <!-- contact section start here -->
-    <section class="contact">
+    <section class="contact" id="secContact">
       <div class="contact__box">
         <div class="headingBox m-auto">
           <h2 class="heading__primary heading__primary--dark">Get in Touch</h2>
@@ -799,20 +799,25 @@
             </div>
 
             <div class="form__group d-flex">
-              <button
-                type="submit"
-                class="btn form__btn ms-auto"
-                data-bs-toggle="modal"
-                data-bs-target="#staticBackdrop"
-              >
+              <button type="submit" class="btn form__btn ms-auto">
                 Send Now
               </button>
             </div>
           </form>
 
           <!-- Modal -->
+          <button
+            type="button"
+            class="btn__modal"
+            id="btnModal"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Launch demo modal
+          </button>
+
           <div
-            class="modal fade"
+            class="modal"
             id="staticBackdrop"
             data-bs-backdrop="static"
             data-bs-keyboard="false"
@@ -823,8 +828,8 @@
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    Modal title
+                  <h1 class="modal-title fs-2" id="staticBackdropLabel">
+                    Message Sent
                   </h1>
                   <button
                     type="button"
@@ -833,8 +838,14 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
+                <div class="modal-body">
+                  <p class="modal-text text-center p-3 fs-3">
+                    Thank you for your interest toward me. Your message has been
+                    saved successfully. I will contact you soon. Have a good
+                    day! 😄
+                  </p>
+                </div>
+                <!-- <div class="modal-footer">
                   <button
                     type="button"
                     class="btn btn-secondary"
@@ -845,7 +856,7 @@
                   <button type="button" class="btn btn-primary">
                     Understood
                   </button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
