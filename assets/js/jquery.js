@@ -1,3 +1,5 @@
+
+
 var adjs = ["Web Designer", "Frontend Developer"],
   sentence = $("#sentence"),
   textSlider = $("#textSlider"),
@@ -37,7 +39,7 @@ function resize(el) {
 // args: element that needs to slide
 function slideIn(el) {
   // duration slide is on screen
-  var hold = 2000;
+  var hold = 2500;
   // resize area to sliding element
   resize($(el));
   // add slide-in class

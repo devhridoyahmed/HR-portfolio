@@ -36,16 +36,17 @@
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
   transform: translateY(0) !important;
-  -webkit-transition: 0.3s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .slide-out {
   -webkit-transform: translateY(-60px);
   -ms-transform: translateY(-60px);
   transform: translateY(-60px);
-  -webkit-transition: 0.3s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  opacity: 0;
 }
 
 @-webkit-keyframes border-transform {
