@@ -3,13 +3,23 @@
 // for menu click event variable
 let menu = document.querySelector(".navbar-toggler-icon--img");
 let btn = document.querySelector(".navbar-toggler");
+let navLink = document.querySelectorAll(".nav-link");
 
-btn.addEventListener("click", function () {
-  console.log(menu.src);
+const menuIcon = function () {
   if (!btn.classList.contains("collapsed")) {
     menu.src = "assets/image/menu-open.svg";
   } else {
     menu.src = "assets/image/menu-close.svg";
+  }
+};
+
+btn.addEventListener("click", menuIcon);
+document.addEventListener("click", function (e) {
+  if (
+    !e.target.classList.contains("nav-link") &&
+    !btn.classList.contains("collapsed")
+  ) {
+    btn.click();
   }
 });
 
@@ -73,3 +83,9 @@ window.addEventListener("load", function () {
       );
   });
 });
+
+/////////////////////////////////////////////////////////
+/////////////////////////////
+
+// form date sender 
+document.getElementById('date').value = Date().toLocaleDateString();

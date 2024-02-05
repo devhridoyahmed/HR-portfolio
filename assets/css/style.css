@@ -337,6 +337,7 @@ body {
 
 .adj {
   white-space: nowrap;
+  text-align: right;
   list-style: none;
   position: absolute;
   line-height: 0.3em;
@@ -785,7 +786,8 @@ body {
         @media only screen and (max-width: 62em) {
           .navbar .navbar-nav .nav-item .nav-link {
             display: inline-block;
-            padding: 0.5rem 2rem; } }
+            padding: 0.5rem 2rem;
+            width: 100%; } }
         .navbar .navbar-nav .nav-item .nav-link:link, .navbar .navbar-nav .nav-item .nav-link:visited {
           color: #DFF6FF;
           transition: all 0.2s; }
