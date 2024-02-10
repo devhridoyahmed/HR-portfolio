@@ -27,8 +27,6 @@ document.addEventListener("click", function (e) {
 let labelAll = document.querySelectorAll(".form__label");
 let inputAll = document.querySelectorAll(".form__input");
 
-console.log(labelAll, inputAll);
-
 function placeholderActive(el) {
   // console.log(el);
   const label = document.querySelector(`label[for="${el.target.id}"]`);
