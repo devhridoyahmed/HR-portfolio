@@ -1048,3 +1048,12 @@ body {
 .footer {
   background-color: #06283D;
   padding: 5rem 6vw; }
+
+.section {
+  transition: transform 1s, opacity 1s; }
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(8rem); }
+
+.lazy-img {
+  filter: blur(20px); }

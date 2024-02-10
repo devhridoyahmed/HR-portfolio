@@ -50,10 +50,10 @@
       background-color: $color-tertiary;
       color: $color-white;
 
-    //   &:hover {
-    //     background-color: $color-tertiary-dark;
-    //     color: $color-white;
-    //   }
+      //   &:hover {
+      //     background-color: $color-tertiary-dark;
+      //     color: $color-white;
+      //   }
     }
   }
 }
@@ -71,4 +71,17 @@
 .footer {
   background-color: $color-black;
   padding: 5rem 6vw;
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+
+  &--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+}
+
+.lazy-img {
+  filter: blur(20px);
 }
